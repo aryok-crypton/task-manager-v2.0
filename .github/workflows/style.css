@@ -1,0 +1,75 @@
+/* Mengatur gaya dasar untuk seluruh elemen web */
+ {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+/* Kontainer utama: Mengatur agar lebar maksimal 700px dan berada di tengah layar */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Desain kotak input teks agar rapi dan nyaman diketik */
+.input-group {
+    margin-bottom: 12px;
+}
+
+.input-group input {
+    width: 100%; /* Lebar penuh menyesuaikan layar HP/laptop */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* Tombol Kirim */
+.btn-submit {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Kartu daftar tugas individual */
+.task-card {
+    background: #fff;
+    border-left: 5px solid #3498db;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex; /* Menyusun elemen di dalam kartu secara berdampingan */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Warna Label Prioritas (Badge) */
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.badge-tinggi { background-color: #e74c3c; color: white; } /* Merah */
+.badge-sedang { background-color: #f39c12; color: white; } /* Oranye */
+.badge-rendah { background-color: #2ecc71; color: white; } /* Hijau */
