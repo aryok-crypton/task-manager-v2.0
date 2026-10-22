@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Pengaturan karakter dan judul yang tampil di tab browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study & Task Manager</title>
+    <!-- Menghubungkan file desain CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Kontainer utama pembungkus seluruh isi web -->
+    <div class="container">
+        <header>
+            <h1>📚 Smart Study Manager</h1>
+            <p>Atur Tugas Sekolahmu dengan Sistem Prioritas Cerdas!</p>
+        </header>
+
+        <!-- Bagian Form untuk menginput tugas baru -->
+        <section class="form-section">
+            <h2>Tambah Tugas Baru</h2>
+            <form id="taskForm">
+                <div class="input-group">
+                    <label for="mapel">Mata Pelajaran:</label>
+                    <input type="text" id="mapel" required placeholder="Contoh: Matematika">
+                </div>
+                <div class="input-group">
+                    <label for="tugas">Deskripsi Tugas:</label>
+                    <input type="text" id="tugas" required placeholder="Contoh: PR Bab 3">
+                </div>
+                <div class="input-group">
+                    <label for="tenggat">Tenggat Waktu (Deadline):</label>
+                    <!-- type="date" memunculkan kalender pilihan tanggal secara otomatis -->
+                    <input type="date" id="tenggat" required>
+                </div>
+                <div class="input-group">
+                    <label for="kesulitan">Tingkat Kesulitan (1 - 5):</label>
+                    <input type="number" id="kesulitan" min="1" max="5" value="3" required>
+                </div>
+                <button type="submit" class="btn-submit">Simpan & Analisis Tugas</button>
+            </form>
+        </section>
+
+        <!-- Bagian untuk menampilkan daftar tugas yang sudah diinput -->
+        <section class="list-section">
+            <h2>Daftar Tugas (Smart Priority)</h2>
+            <div id="taskList" class="task-container">
+                <!-- Tugas dari JavaScript akan dimasukkan otomatis ke sini -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Menghubungkan file logika JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
